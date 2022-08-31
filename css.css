@@ -1,0 +1,21 @@
+.box {
+    background-color: skyblue;
+    font-size: 150%;
+    text-align: center;
+}
+
+.box > a:link {
+color : white;
+}
+.box > a:visited {
+color : white;
+}
+.box > a:hover {
+color : white;
+}
+.box > a:active {
+color : white
+}
+.box > a {
+    text-decoration-line : none;
+}

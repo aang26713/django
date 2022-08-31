@@ -5,29 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        .box {
-            background-color: skyblue;
-            font-size: 150%;
-            text-align: center;
-        }
+    <link rel="stylesheet" href="css.css" type="text/css">
 
-        .box > a:link {
-        color : white;
+    <script>
+
+        function doSomething() {
+            let num1 = document.getElementById("inputA").value;
+            let num2 = document.getElementById("inputB").value;
+
+            document.getElementById("valueA").innerHTML = num1;
+            document.getElementById("valueB").innerHTML = num2;
+            document.getElementById("valueC").innerHTML = Number(num1) + Number(num2);
         }
-        .box > a:visited {
-        color : white;
-        }
-        .box > a:hover {
-        color : white;
-        }
-        .box > a:active {
-        color : white
-        }
-        .box > a {
-            text-decoration-line : none;
-        }
-    </style>
+    </script>
 </head>
 <body>
     <div class="box">
@@ -45,6 +35,16 @@
     <h4>세번째 크기 헤드라인</h4>
 
     <h5>세번째 크기 헤드라인</h5>
+
+    <label for="inputA">첫번째 입력값</label>
+    <input id="inputA" value="10" onkeyup="doSomething()">
+
+    <label for="inputB">두번째 입력값</label>
+    <input id="inputB" value="20" onkeyup="doSomething()">
+
+    <p>
+        <span id="valueA"></span> + <span id="valueB"></span> = <span id="valueC"></span>
+    </p>
 
     <p>하이퍼 링크 연결</p>
 
