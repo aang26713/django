@@ -4,18 +4,18 @@
     text-align: center;
 }
 
-.box > a:link {
-color : white;
+body {
+    background-color: rgb(37, 37, 37);
 }
-.box > a:visited {
-color : white;
+
+.container {
+    background-color: white;
 }
-.box > a:hover {
-color : white;
+
+/* body {
+    filter: blur(10px);
 }
-.box > a:active {
-color : white
-}
-.box > a {
-    text-decoration-line : none;
-}
+
+body:hover {
+    filter: none;
+} */
